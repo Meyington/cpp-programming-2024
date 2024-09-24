@@ -1,6 +1,6 @@
 # TextEditor
 
-This is a simple text editor implemented in C++ as part of my homework at Saint Petersburg State University (СПбГУ) for the second semester of programming. The editor allows users to manipulate text using a cursor with various functionalities.
+This is a simple text editor implemented in C++ as part of my homework at Saint Petersburg University (SPbU) for the thirty semester of programming. The editor allows users to manipulate text using a cursor with various functionalities.
 
 ## Features
 
@@ -28,14 +28,16 @@ To build the project, run the following commands in your terminal:
 
 ```bash
 make
+```
 This will compile the code and generate the executable file TextEditor.
 
-##Clean Up
+## Clean Up
 
 To remove the object files and the compiled executable, run:
 
 ```bash
 make clean
+```
 ##License
 
-This project is licensed under the Apache License 2.0. See the LICENSE file for details.
+This project is licensed under the Apache-2.0 License - see the [LICENSE](LICENSE) file for details.
