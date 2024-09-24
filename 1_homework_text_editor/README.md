@@ -1,6 +1,6 @@
 # TextEditor
 
-This is a simple text editor implemented in C++ as part of my homework at Saint Petersburg State University (СПбГУ) for the second semester of programming. The editor allows users to manipulate text using a cursor with various functionalities.
+This is a simple text editor implemented in C++ as part of my homework at Saint Petersburg University (SPbU) for the second semester of programming. The editor allows users to manipulate text using a cursor with various functionalities.
 
 ## Features
 
