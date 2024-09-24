@@ -28,6 +28,7 @@ To build the project, run the following commands in your terminal:
 
 ```bash
 make
+```
 This will compile the code and generate the executable file TextEditor.
 
 ##Clean Up
@@ -36,6 +37,7 @@ To remove the object files and the compiled executable, run:
 
 ```bash
 make clean
+```
 ##License
 
 This project is licensed under the Apache License 2.0. See the LICENSE file for details.
