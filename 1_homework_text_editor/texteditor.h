@@ -49,7 +49,7 @@ class TextEditor {
     {
         TextEditor result(lhs);
 
-        std::stack<std::string> rightCopy = rhs.right; // Копируем правый стек для сохранения оригинала
+        std::stack<std::string> rightCopy = rhs.right;
         std::stack<std::string> reversedRight;
 
         while (!rightCopy.empty())

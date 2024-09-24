@@ -9,61 +9,61 @@ int main() {
     std::cout << "\n==========================\n";
     std::cout << "       TEXT EDITOR     \n";
     std::cout << "==========================\n";
-    std::cout << "  1. Добавить текст\n";
-    std::cout << "  2. Удалить текст\n";
-    std::cout << "  3. Переместить курсор влево\n";
-    std::cout << "  4. Переместить курсор вправо\n";
-    std::cout << "  5. Вывести текст\n";
-    std::cout << "  6. Выход\n";
+    std::cout << "  1. Add text\n";
+    std::cout << "  2. Delete text\n";
+    std::cout << "  3. Move cursor left\n";
+    std::cout << "  4. Move cursor right\n";
+    std::cout << "  5. Display text\n";
+    std::cout << "  6. Exit\n";
     std::cout << "==========================\n";
-    std::cout << "Введите ваш выбор: ";
+    std::cout << "Enter your choice: ";
     correct(choice);
 
     switch (choice) {
       case 1: {
         std::string text;
-        std::cout << "\nВведите текст для добавления: ";
+        std::cout << "\nEnter text to add: ";
         std::cin.ignore();
         std::getline(std::cin, text);
         editor.addText(text);
-        std::cout << "\nТекст успешно добавлен!\n";
+        std::cout << "\nText added successfully!\n";
         break;
       }
       case 2: {
         int k;
-        std::cout << "\nВведите количество символов для удаления: ";
+        std::cout << "\nEnter the number of characters to delete: ";
         correct(k);
         int deletedCount = editor.deleteText(k);
-        std::cout << "Удалено " << deletedCount << " символов\n";
+        std::cout << "Deleted " << deletedCount << " characters\n";
         break;
       }
       case 3: {
         int k;
-        std::cout << "\nВведите количество символов для перемещения влево: ";
+        std::cout << "\nEnter the number of characters to move left: ";
         correct(k);
         std::string leftText = editor.cursorLeft(k);
-        std::cout << "Текст слева от курсора: " << leftText << "\n";
+        std::cout << "Text to the left of the cursor: " << leftText << "\n";
         break;
       }
       case 4: {
         int k;
-        std::cout << "\nВведите количество символов для перемещения вправо: ";
+        std::cout << "\nEnter the number of characters to move right: ";
         correct(k);
         std::string rightText = editor.cursorRight(k);
-        std::cout << "Текст справа от курсора: " << rightText << "\n";
+        std::cout << "Text to the right of the cursor: " << rightText << "\n";
         break;
       }
       case 5: {
-        std::cout << "\nТекущий текст:\n";
+        std::cout << "\nCurrent text:\n";
         std::cout << editor;
         break;
       }
       case 6:
-        std::cout << "\nВыход из редактора.\n";
+        std::cout << "\nExiting the editor.\n";
         break;
       default:
         std::cout
-            << "\nНеверный выбор. Пожалуйста, выберите число от 1 до 6.\n";
+            << "\nInvalid choice. Please choose a number between 1 and 6.\n";
     }
   } while (choice != 6);
 
