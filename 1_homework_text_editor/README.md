@@ -31,7 +31,7 @@ make
 ```
 This will compile the code and generate the executable file TextEditor.
 
-##Clean Up
+## Clean Up
 
 To remove the object files and the compiled executable, run:
 
