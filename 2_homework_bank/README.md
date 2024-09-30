@@ -46,6 +46,3 @@ make clean
 ## License
 
 This project is licensed under the Apache-2.0 License - see the [LICENSE](LICENSE) file for details.
-```
-
-You can copy this content into a `README.md` file for your project!
