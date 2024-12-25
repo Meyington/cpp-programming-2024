@@ -58,13 +58,14 @@ void Bank::GenerateRandomAccounts(int randomNumber) {
       "Андрей", "Иван",    "Илья",  "Петр",  "Даниил", "Данил",
       "Никита", "Евдокия", "Артём", "Елена", "Алёна"};
 
-  for (int i = 0; i < randomNumber; ++i) {
-    double balance = static_cast<double>(rand()) / RAND_MAX * 1200000;
-    std::string accountHolder = accountHolders[rand() % accountHolders.size()];
-    std::string accountNumber = GenerateAccountNumber();
+  for (int i = 0; i < randomNumber; ++i)
+  {
+      double balance = static_cast<double>(rand()) / RAND_MAX * 1200000;
+      std::string accountHolder = accountHolders[rand() % accountHolders.size()];
+      std::string accountNumber = GenerateAccountNumber();
 
-    BankAccount newAccount(balance, accountNumber, accountHolder);
-    AddAccount(newAccount);
+      BankAccount newAccount(balance, accountNumber, accountHolder);
+      AddAccount(newAccount);
   }
 }
 
