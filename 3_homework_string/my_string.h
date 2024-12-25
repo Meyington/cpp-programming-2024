@@ -1,5 +1,5 @@
-#ifndef STRING_H
-#define STRING_H
+#ifndef MY_STRING_H
+#define MY_STRING_H
 
 #include <cstddef> // size_t
 #include <cstring> // strlen, strcpy
@@ -14,12 +14,17 @@ struct String
 
     String(const String &other);
     String &operator=(const String &other);
+    String operator[](int i);
 
     void append(const String &other);
+
+    friend std::ostream &operator<<(std::ostream &stream, const String &text);
 
   private:
     size_t size;
     char *str;
+    int startInd;
+    bool flag;
 };
 
-#endif // STRING_H
+#endif // MY_STRING_H

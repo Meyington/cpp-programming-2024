@@ -1,6 +1,16 @@
-#include "string.h"
+#include "my_string.h"
 
-int main()
+int main(int argc, char *argv[])
 {
-    std::cout << "Hello world" << std::endl;
-}
+    String hello("hello");
+
+    std::cout << hello << std::endl;
+    String const hell = hello[0][4];
+    std::cout << hell << std::endl;
+    String const ell = hello[1][4];
+    std::cout << ell << std::endl;
+    String const empty = hello[1][1];
+    std::cout << empty << std::endl;
+
+    return EXIT_SUCCESS;
+};

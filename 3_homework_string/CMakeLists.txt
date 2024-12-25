@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(3_homework_string main.cpp
-    string.h string.cpp)
+    my_string.h my_string.cpp)
 
 include(GNUInstallDirs)
 install(TARGETS 3_homework_string
