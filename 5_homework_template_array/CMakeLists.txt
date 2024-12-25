@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
-project(ArrayTestProject LANGUAGES CXX)
+project(Templatearray LANGUAGES CXX)
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
-set(SOURCES
+set(HEADERS
     ${CMAKE_SOURCE_DIR}/include/array_template.h)
 
 set(TEST_SOURCES
